@@ -24,14 +24,18 @@ The objective of Milestone 3 is to implement **multiple agents** that collaborat
 Milestone3/
 │
 ├── agents/
-│ ├── research_agent.py
-│ └── summary_agent.py
+│   ├── research_agent.py
+│   └── summary_agent.py
 │
 ├── memory/
-│ ├── agent_memory.py
-│ └── shared_memory.py
+│   ├── agent_memory.py
+│   └── shared_memory.py
+│
+├── orchestration.py
 ├── main.py
 └── README.md
+
+
 
 ## Technologies Used
 - Python
