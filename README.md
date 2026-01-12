@@ -1,24 +1,16 @@
-# Agent Orchestration Framework using LangChain & Gemini
+# Agent Orchestration Framework using LangChain
 
-## 📌 Project Overview
-This project demonstrates the step-by-step development of an **AI Agent Orchestration System** using **LangChain** and **Google Gemini API**.  
-The system is built incrementally using **four milestones**, following an **Agile development approach**.
+## Project Overview
+This project demonstrates the step-by-step development of an **AI Agent Orchestration System** using **LangChain** and the **Google Gemini API**.  
+The project is built using an **Agile approach**, where features are added gradually through four milestones.
 
-The final solution includes:
-- Intelligent AI agents
-- Tool usage
-- Multi-agent collaboration
-- FAST API backend
-- Web-based frontend
-- Agile documentation
-- Unit testing
-- Defect tracking
+Each milestone improves the system and adds new functionality, starting from a basic agent and ending with a complete system with API and UI support.
 
 ---
 
-## 📁 Project Structure
+## Project Structure (Milestone-wise)
 
-agent-orchestration-langchain/
+agent-orchestration-framework/
 │
 ├── Milestone1/
 ├── Milestone2/
@@ -27,134 +19,122 @@ agent-orchestration-langchain/
 │
 ├── Unit_tests/
 ├── Agile_Documents/
-├── defects_Tacker/
+├── Defects_Tracker/
 │
-├── venv/
-├── .env
+├── requirements.txt
+├── .env.example
 └── README.md
 
 
 ---
 
-## 🧠 Milestone-wise Description
+## Milestone 1 – Basic Single Agent
 
-### 🔹 Milestone 1 – Basic Single Agent
-**Objective:**  
-Create a basic AI agent that interacts through the console.
+### Objective
+To create a simple AI agent that can interact with the user through the console.
 
-**Features:**
-- Single agent
+### What is implemented
+- A single AI agent
 - Prompt-based interaction
-- Console input/output
-- Uses Gemini API
+- Console input and output
+- Connection with Google Gemini API
 
-**Outcome:**  
-A working AI agent that answers simple questions.
-
----
-
-### 🔹 Milestone 2 – Tool Integration
-**Objective:**  
-Enable the agent to use external tools.
-
-**Features:**
-- Calculator tool
-- Tool reasoning
-- Error handling
-
-**Outcome:**  
-Agent can decide when to use tools for solving tasks.
+### Outcome
+A basic working AI agent that can answer simple user questions.
 
 ---
 
-### 🔹 Milestone 3 – Multi-Agent Workflow
-**Objective:**  
-Introduce collaboration between multiple agents.
+## Milestone 2 – Tool Integration
 
-**Features:**
+### Objective
+To allow the agent to use external tools when required.
+
+### What is implemented
+- Tool integration (example: calculator)
+- Agent reasoning to decide when to use a tool
+- Basic error handling
+
+### Outcome
+The agent can now use tools to solve tasks more accurately instead of only relying on text responses.
+
+---
+
+## Milestone 3 – Multi-Agent Workflow
+
+### Objective
+To enable multiple agents to work together using an orchestrated workflow.
+
+### What is implemented
 - Research agent
-- Summary agent
-- Orchestrated workflow
+- Summarization agent
+- Orchestrator to manage agent flow
+- Individual and shared memory
 
-**Outcome:**  
-Agents work together to research and summarize topics.
+### Outcome
+Multiple agents collaborate to complete a task by sharing information and working step by step.
 
 ---
 
-### 🔹 Milestone 4 – API & Frontend Integration
-**Objective:**  
-Expose the multi-agent system using an API and a frontend.
+## Milestone 4 – API & Frontend Integration
 
-**Features:**
+### Objective
+To expose the multi-agent system through an API and a user interface.
+
+### What is implemented
 - FastAPI backend
-- Streamlit frontend
-- REST endpoint
-- End-to-end interaction
+- REST API endpoints
+- Streamlit-based frontend
+- End-to-end user interaction
 
-**Outcome:**  
-Users can interact with the system via a web interface.
-
----
-
-## 🔁 Agile Development Approach
-
-This project follows **Agile methodology**, where development is divided into small, manageable iterations (milestones).
-
-### Agile Practices Used:
-- Incremental development (Milestone 1 → 4)
-- Continuous testing after each milestone
-- Regular improvements and refactoring
-- Clear definition of milestone objectives
-
-### Agile Documents Maintained:
-- Sprint-wise milestone planning
-- Task breakdown for each milestone
-- Continuous feedback and fixes
+### Outcome
+Users can interact with the multi-agent system through a web interface instead of the console.
 
 ---
 
-## 🧪 Unit Testing
+## Agile Development Approach
 
-Unit tests are written to ensure that:
-- Agents return valid responses
-- Tools work correctly
-- Workflow executes without errors
-- API endpoints respond as expected
+This project follows Agile methodology with:
+- Incremental development using milestones
+- Testing after each milestone
+- Continuous improvements and refactoring
+- Clear objectives for every phase
 
-### Testing Scope:
-- Agent creation functions
+
+
+---
+
+## Unit Testing
+Unit tests are written to verify:
+- Agent responses
+- Tool functionality
 - Workflow execution
-- API response validation
+- API responses
 
-Tests are placed inside the `tests/` folder and can be extended further.
+
 
 ---
 
-## 🐞 Defect Tracking
+## Defect Tracking
+Issues found during development were tracked and fixed properly.
 
-Defects identified during development were tracked and resolved systematically.
-
-### Defect Tracking Includes:
+Defect details include:
 - Issue description
-- Root cause analysis
+- Root cause
 - Fix applied
 - Verification status
 
-Common defects fixed:
-- Import errors
-- API parameter validation errors
-- Agent function name mismatches
-- Environment configuration issues
-
-Defect details are maintained in the `defects/` folder.
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 - Python
-- LangChain (classic)
+- LangChain
 - Google Gemini API
 - FastAPI
-- Uvicorn
 - Streamlit
 
+---
+
+## Conclusion
+This project shows how an AI system can be built step by step using agents, tools, memory, and orchestration.  
+The milestone-based approach helps in understanding real-world AI system development clearly and practically.
